@@ -57,23 +57,7 @@ public class StoreFront {
 		ArrayList<ComparableProduct> sortedList = new ArrayList<ComparableProduct>();
 		ArrayList<Product> receipt = new ArrayList<Product>(); // Create a receipt
 		
-		// Create armor and add it to the inventory list
-		Product armor1 = new Armor("Light Armor", "Light armor with low resistance.", 5.99, 7, 30);
-		Product armor2 = new Armor("Heavy Armor", "Heavy armor with high resistance.", 9.99, 3, 50);
-		inventoryList.add(armor1);
-		inventoryList.add(armor2);
-		
-		// Create weapons and add them to the inventory list
-		Product weapon1 = new Weapon("Sword", "Close range with high damage.", 3.99, 5, 35);
-		Product weapon2 = new Weapon("Bow", "Long range weapon with low damage.", 7.99, 2, 12);
-		inventoryList.add(weapon1);
-		inventoryList.add(weapon2);
-
-		// Create weapons and add them to the inventory list
-		Product health1 = new Health("Small Health", "Small amount of health.", 5.00, 12, 15);
-		Product health2 = new Health("Large Health", "Large amount of health.", 15.00, 6, 45);
-		inventoryList.add(health1);
-		inventoryList.add(health2);
+		inventoryList = readFromFile("products.json");
 		
 		// Add inventory to sortList
 		inventoryList.forEach(p ->{
