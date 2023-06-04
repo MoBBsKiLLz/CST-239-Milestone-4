@@ -3,6 +3,9 @@ package app;
 import storefront.*;
 import product.*;
 import store.*;
+
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 import com.fasterxml.jackson.databind.*;
 
@@ -12,6 +15,36 @@ import com.fasterxml.jackson.databind.*;
  *
  */
 public class StoreFront {
+	/**
+	 * ReadFromFile method that reads from a file
+	 * @param filename Filename parameter of type String
+	 * @return Returns an ArrayList of type Car
+	 */
+	private static ArrayList<Product> readFromFile(String filename) {
+		ArrayList<Product> products = new ArrayList<Product>();
+		try {
+			// Open the file File to read
+			File file = new File(filename);
+			Scanner s = new Scanner(file);
+			
+			// Create list of Cars by reading JSON file
+			while(s.hasNext()) {
+				// Read a string of JSON and convert to a Car
+				String json = s.nextLine();
+				ObjectMapper objectMapper = new ObjectMapper();
+				Product product = objectMapper.readValue(json, Product.class);
+				products.add(product);
+			}
+			
+			// Cleanup
+			s.close();
+		} catch (IOException e) {
+			// Print exception
+			e.printStackTrace();
+		}
+		
+		return products;
+	}
 
 	/**
 	 * Main method

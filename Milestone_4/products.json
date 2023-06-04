@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    },
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    },
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    },
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    },
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    },
+    {
+        "name": "Light Armor",
+        "description": "Light armor with low resistance.",
+        "price": 5.99,
+        "quantity": 7,
+        "resistance": 30
+    }
+]
