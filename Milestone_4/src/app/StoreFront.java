@@ -18,7 +18,7 @@ public class StoreFront {
 	/**
 	 * ReadFromFile method that reads from a file
 	 * @param filename Filename parameter of type String
-	 * @return Returns an ArrayList of type Car
+	 * @return Returns an ArrayList of type Product
 	 */
 	private static ArrayList<Product> readFromFile(String filename) {
 		ArrayList<Product> products = new ArrayList<Product>();
