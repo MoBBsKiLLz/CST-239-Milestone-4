@@ -1,7 +1,7 @@
 package app;
 
 import storefront.*;
-import product.*;
+//import product.*;
 import store.*;
 
 import java.io.File;
